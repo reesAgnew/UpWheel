@@ -1,0 +1,462 @@
+body {
+  background-color: #f2f5f9;
+  color: #2d2d2d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1vw;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  font-size: x-small;
+}
+
+/* The sidebar menu */
+
+.sidenav {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 15%;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: white;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+  font-size: x-small;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+  text-decoration: none;
+  color: #2d2d2d;
+  display: block;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.sidenav img {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+  color: #2569f5;
+}
+
+.navOptions {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.userAnchorTags {
+  text-align: center;
+}
+
+/* Style page content */
+
+.main {
+  margin-left: 15%;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.navItem {
+  margin: 0.5rem 0 0 2rem;
+  font-weight: 500;
+}
+
+.defaultDropdownOption {
+  display: none;
+}
+
+.newUsedRadio {
+  display: inline;
+}
+
+.searchBarDropdowns select {
+  border-color: #2569f5;
+}
+
+.searchBarRadioBoxes {
+  display: inline-block;
+  margin: 0 2% 2% 2%;
+  width: 50rem;
+}
+
+#userLoginImg {
+  padding-top: 0;
+  margin: 0 auto;
+}
+
+#logoImg {
+  margin: 0 auto 2rem auto;
+}
+
+#roadImg {
+  padding-bottom: 0;
+}
+
+#searchBarDiv {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 0.5rem 0.5rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Make cards look like buttons on click */
+
+.card:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+
+.result-images {
+  width: 10rem;
+  border-radius: 5px;
+  /* height: 5rem; */
+  margin: 1%;
+  /*display: inline-block;*/
+}
+
+.result-container {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result-container p {
+  margin: 0;
+}
+
+form {
+  display: inline
+}
+
+.results-header {
+  text-decoration-style: double;
+}
+
+.results-info {
+  color: #707070;
+}
+
+.dropdown {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #2569f5;
+  color: #707070;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  width: 12%;
+  margin: 2%;
+}
+
+/* remove box around currently selected dropdown */
+
+.dropdown:focus {
+  outline: none;
+}
+
+.radio-selects {
+  background-color: #f2f5f9;
+  display: inline-block;
+  margin: 0 0 1% 0;
+  padding: 0.5% 0;
+  border-radius: 5px;
+}
+
+.radio-option {
+  display: inline-block;
+  margin: 1% 0.5rem;
+}
+
+#search-button {
+  float: right;
+  width: 10rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #2569f5;
+  margin: 0 3.5rem 0 0;
+  padding: 0.2rem;
+  border: none;
+}
+
+#newUsedDiv {
+  margin-right: 1rem;
+}
+
+label {
+  margin: 0;
+}
+
+#searchHeader {
+  font-size: x-large
+}
+
+.car-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.car-card {
+  /* Add shadows to create the "card" effect */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 79rem;
+  margin: 0.5% 0.5%;
+}
+
+.fas {
+  padding: 0 1rem 0 0;
+}
+
+.car-labels {
+  font-size: smaller;
+  color: #707070;
+}
+
+.car-title {
+  font-size: xx-large;
+  margin: 0.5rem 0;
+}
+
+.car-details {
+  display: inline-block;
+}
+
+.car-details-detail {
+  font-size: large;
+  margin: 0.25rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.2rem 0 0;
+}
+
+#learn-more-button {
+  width: 10rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #2569f5;
+  margin: 0.5rem 0;
+  padding: 0.2rem;
+  border: none;
+  display: block;
+}
+
+.car-div {
+  padding: 2rem;
+}
+
+.car-description {
+  font-size: small;
+  line-height: 1.35rem;
+}
+
+.car-images-container {}
+
+.favorite-icon {
+  color: #2569f5;
+  float: right;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.results-image {
+  height: 6rem;
+  width: 8.5rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+#similar-vehicles-header {
+  font-size: large;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.slider-image {
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.container {
+  position: relative;
+  padding: 1.5rem 1.5rem;
+  /* max-width: 1000px;
+  margin: 0 auto; */
+}
+
+/* .holder {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+} */
+
+.holder::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide the images by default */
+
+.slides {
+  display: none;
+  /* max-width: 1000px; */
+  /* width: 100%;
+  flex-shrink: 0;
+  height: 100%; */
+}
+
+.slides img {
+  width: 100%;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (max-width: 600px) {
+  .prevContainer, .nextContainer {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.prevContainer, .nextContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, calc(-50% - 54px));
+  height: 54px;
+  cursor: pointer;
+}
+
+.prevContainer {
+  margin-left: 26px;
+  left: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+.prev {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 34px;
+  width: 32px;
+  float: left;
+  margin-left: 12px
+}
+
+.prev svg, .next svg {
+  fill: white;
+}
+
+.nextContainer {
+  margin-right: 26px;
+  right: 0;
+  border-radius: 0 30px 30px 0;
+}
+
+.next {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 34px;
+  width: 32px;
+  float: right;
+  margin-right: 12px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0.5rem;
+}
+
+/* Add a transparency effect for thumbnail images */
+
+.slide-thumbnail {
+  width: 100%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.active, .slide-thumbnail:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  #gform_wrapper_20 {
+    padding: 0 !important;
+  }
+}
