@@ -1,2 +1,2 @@
 # UpWheel
-Used car search engine. Designed to implement Market Check API. API mocked using postman. Node.Js, Express, HTML, CSS
+UpWheel is a used car search engine designed implementing the Market Check API. This version of UpWheel uses the API mocked using postman with several features altered or disabled. 
