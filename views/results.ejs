@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+    <%- include('partials/searchbar') %>
+
+
+    <div class="results-grid">
+        <% for(let car of searchResults) { %>
+            <!-- <form action="/search/results/<%=car.id%>" method="get"> -->
+            <form action="/search/results/<%=car.make%>" method="get">
+                <div class="card">
+                    <img src="<%= car.photo %> " class="results-image" alt="">
+                    <div class="result-container">
+                        <p class="results-header">
+                                <%= car.year + " " + car.make + " " + car.model + " " + car.trim %>
+                            </p>
+                        <p class="results-info">Price: $<%= car.price %>
+                        </p>
+                        <p class="results-info">Mileage: <%= car.kilometers%> km
+                        </p>
+                        <p class="results-info">Location: <%= car.location %>
+                        </p>
+                        <input type="hidden" name="vehicleId" id="vehicleId" value="<%= car.id %>">
+                        <input type="hidden" name="vehicleMake" id="vehicleMake" value="<%= car.make %>">
+                    </div>
+                    
+                </div>
+            </form>
+            <% }%>
+    </div>
+
+        <%- include('partials/footer') %>

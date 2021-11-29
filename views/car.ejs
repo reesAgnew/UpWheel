@@ -1,0 +1,179 @@
+<%- include('partials/header') %>
+    <div class="car-card">
+        <!-- <div class="car-images">
+            <% for(let image of car.images) { %>
+
+                <img src="<%= image %> " style="height: 150px;" alt="">
+
+                <% }%>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+            <!-- main images -->
+            <div class="holder">
+                <div class="slides">
+                    <img class="slider-image" src="<%=car.images[0]%>">
+                </div>
+
+                <div class="slides">
+                    <img class="slider-image" src="<%=car.images[1]%>">
+                </div>
+
+                <div class="slides">
+                    <img class="slider-image" src="<%=car.images[2]%>">
+                </div>
+
+
+
+            </div>
+
+            <div class="prevContainer"><a class="prev" onclick="plusSlides(-1)">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                    </svg>
+                </a></div>
+            <div class="nextContainer"><a class="next" onclick="plusSlides(1)">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                    </svg>
+                </a></div>
+
+
+            <!-- thumnails in a row -->
+            <div class="row">
+                <div class="column">
+                    <img class="slide-thumbnail slider-image" src="<%=car.images[0]%>" onclick="currentSlide(1)"
+                        alt="Caption One">
+                </div>
+                <div class="column">
+                    <img class="slide-thumbnail slider-image" src="<%=car.images[1]%>" onclick="currentSlide(2)"
+                        alt="Caption Two">
+                </div>
+                <div class="column">
+                    <img class="slide-thumbnail slider-image" src="<%=car.images[2]%>" onclick="currentSlide(3)"
+                        alt="Caption Three">
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 
+        <div class="car-images-container">
+            <img src="<%= car.images[0] %>" alt="" class="result-images">
+        </div> -->
+
+        <div class="car-div">
+            <div class="favorite-icon"><i class="far fa-heart"></i></div>
+            <div class="car-title">
+                <%= car.year %>
+                    <%= car.make %>
+                        <%= car.model %>
+                            <%= car.trim %>
+            </div>
+            <div class="car-container">
+                <div class="car-details">
+                    <label class="car-labels">Price: </label>
+                    <div class="car-details-detail">$<%= car.price %>
+                    </div>
+                </div>
+                <div class="car-details">
+                    <label class="car-labels">Mileage: </label>
+                    <div class="car-details-detail">
+                        <%= car.kilometers %> km
+                    </div>
+                </div>
+                <div class="car-details">
+                    <label class="car-labels">Location: </label>
+                    <div class="car-details-detail">
+                        <%= car.location %>
+                    </div>
+                </div>
+                <div class="car-details">
+                    <label class="car-labels">Source: </label>
+                    <div class="car-details-detail">
+                        <%= car.source %>
+                    </div>
+                </div>
+                <div class="car-details">
+                    <label class="car-labels">Seller Type: </label>
+                    <div class="car-details-detail" style="text-transform:capitalize;">
+                        <%= car.sellerType %>
+                    </div>
+                </div>
+                <div class="car-details">
+                    <label class="car-labels">New/Used: </label>
+                    <div class="car-details-detail" style="text-transform:capitalize;">
+                        <%= car.newOrUsed %>
+                    </div>
+                </div>
+
+            </div>
+            <div class="car-details">
+                <label class="car-labels">Description: </label>
+                <p class="car-description">
+                    <%= car.sellerComments %>
+                </p>
+            </div>
+
+            <a href="<%= car.dealerUrl  %> "><button id="learn-more-button">Learn More</button></a>
+        </div>
+    </div>
+    <p id="similar-vehicles-header">Similar Vehicles</p>
+    <div class="results-grid">
+        <% for(let car of similar) { %>
+            <!-- <form action="/search/results/<%=car.id%>" method="get"> -->
+                <form action="/search/results/<%=car.make%>" method="get">
+                <div class="card">
+                    <img src="<%= car.photo %> " class="results-image" alt="">
+                    <div class="result-container">
+                        <p class="results-header">
+                            <%= car.year + " " + car.make + " " + car.model + " " + car.trim %>
+                        </p>
+                        <p class="results-info">Price: $<%= car.price %>
+                        </p>
+                        <p class="results-info">Mileage: <%= car.kilometers%> km
+                        </p>
+                        <p class="results-info">Location: <%= car.location %>
+                        </p>
+                        <input type="hidden" name="vehicleId" id="vehicleId" value="<%= car.id %>">
+                        
+                        <input type="hidden" name="vehicleMake" id="vehicleMake" value="<%= car.make %>">
+                    </div>
+
+                </div>
+            </form>
+            <% }%>
+    </div>
+
+
+    <script src="/js/image-slider-script.js"></script>
+
+
+    <%- include('partials/footer') %>
