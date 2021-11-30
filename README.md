@@ -3,6 +3,7 @@ UpWheel is a used car search engine designed implementing the Market Check API. 
 
 # Using The App
 # Initial Setup
+Download the app and open a command line at the root folder of the app.  
 1. Run the following command to install npm packages:  
 -  npm install  
 2. Run the following command to start the server:  
