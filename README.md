@@ -1,5 +1,5 @@
 # UpWheel Demo
-UpWheel is a used car search engine designed implementing the Market Check API. This version of UpWheel uses the API mocked using postman with several features altered or disabled. A demonstration of the application can be viewed at youtube.com/linktovideoihaventmadeyet.
+UpWheel is a used car search engine designed implementing the Market Check API. This version of UpWheel uses the API mocked using postman with several features altered or disabled. A demonstration of the application can be viewed at https://youtu.be/-COW-roH8mI.
 
 # Using The App
 # Initial Setup
