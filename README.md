@@ -2,6 +2,14 @@
 UpWheel is a used car search engine designed implementing the Market Check API. This version of UpWheel uses the API mocked using postman with several features altered or disabled. A demonstration of the application can be viewed at youtube.com/linktovideoihaventmadeyet.
 
 # Using The App
+# Initial Setup
+1. Run the following command to install npm packages:  
+-  npm install  
+2. Run the following command to start the server:  
+-  node index.js
+3. The app can now be accessed through the browser at: 
+-  http://localhost:8080/  
+
 # Searching
 - Launching the app will land you at the search screen.  
 - The "make" search option is a dropdown populated dynamically with makes of vehicles currently available on the Market Check API, the demo app provides this same list but only the first 6 options [Ford, Chevrolet, Toyota, Nissan, Honda, Jeep] active.  
