@@ -3,10 +3,10 @@ UpWheel is a used car search engine designed implementing the Market Check API. 
 
 # Using The App
 # Searching
--Launching the app will land you at the search screen.  
--The "make" search option is a dropdown populated dynamically with makes of vehicles currently available on the Market Check API, the demo app provides this same list but only the first 6 options [Ford, Chevrolet, Toyota, Nissan, Honda, Jeep] active.  
--After a "make" is selected the "models" dropdown will activate and populate with models of the select make that are currently available on the Market Check API, the demo app provides this same functionality but with only the first 3 options of the dropdown list active. [{F-150, Escape, Explorer},{Silverado 1500, Equinox, Traverse},{Camry, RAV4, Corolla},{CR-V, Accord, Civic},{Rogue, Altima, Sentra},{Grand Cherokee, Cherokee, Wrangler Unlimited}]  
--The rest of the search bar has been disabled for the demo version of the app, though selections can still be made. The "enter a location" option is linked to the Google Maps API and will auto-complete your location, this has no affect on the search in the demo.  
+- Launching the app will land you at the search screen.  
+- The "make" search option is a dropdown populated dynamically with makes of vehicles currently available on the Market Check API, the demo app provides this same list but only the first 6 options [Ford, Chevrolet, Toyota, Nissan, Honda, Jeep] active.  
+- After a "make" is selected the "models" dropdown will activate and populate with models of the select make that are currently available on the Market Check API, the demo app provides this same functionality but with only the first 3 options of the dropdown list active. [{F-150, Escape, Explorer},{Silverado 1500, Equinox, Traverse},{Camry, RAV4, Corolla},{CR-V, Accord, Civic},{Rogue, Altima, Sentra},{Grand Cherokee, Cherokee, Wrangler Unlimited}]  
+- The rest of the search bar has been disabled for the demo version of the app, though selections can still be made. The "enter a location" option is linked to the Google Maps API and will auto-complete your location, this has no affect on the search in the demo.  
 
 # Results
 - After clicking "search" you will be taken to the "results" screen, this screen will show a selection of vehicles matching the make and model selected in the search. These results are from a saved response from the Market Check API matching the same criteria and saved to Postman.  
